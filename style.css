@@ -1,0 +1,101 @@
+/*ul {
+  background-color: rgb(27, 24, 24);
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+li {
+  display: flex;
+  align-items: flex-start;
+  float: left;
+}
+li a {
+  float: inline-start;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 14px 16px;
+  color: white;
+}
+.active {
+  float: left;
+  background-color: aqua;
+  color: white;*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "popins", sans-serif;
+}
+div {
+  width: 320px;
+  height: 140px;
+  /*border: 1px solid #333;*/
+  margin: 10px auto;
+  background-color: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("https://i.gifer.com/GRYb.gif");
+  background-color: none;
+  background-size: cover;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.logo {
+  font-size: 1em;
+  color: white;
+  user-select: none;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  margin-left: 40px;
+  text-align: center;
+}
+.navigation .btn-login {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.navigation .btn-login:hover {
+  background: white;
+  color: green;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+}
